@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:linear-gradient(#e66465, #9198e5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    transition: all 2s ease;
+}   
+.main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu{
+    box-sizing: border-box;
+    width: 135px;
+}
+.fa-cog{
+    font-size: 3rem;
+    color:black;
+    opacity: 0.9;
+    margin: 5vh;
+    transition: all 1s ease;
+}
+
+.option{
+    opacity: 0.6;
+    border-radius: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.firstBtn,.secondBtn,.thirdBtn{
+    background-color: rgb(245, 255, 191);
+    border :none;
+    opacity: 0.9;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 5px 0px;
+}
+.firstBtn,.thirdBtn{
+    min-width: 135px;
+}
+h1{
+    margin: 10vh 0vw;
+    align-items: center;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-Submit{
+    border: none;
+    background-color: azure;
+    font-size: 1.5rem;
+    padding: 2px;
+    margin-bottom: 20px;
+}
+.todo-button{
+    border: none;
+    background-color: azure;
+    font-size: 1.5rem;
+    padding: 2px;
+    margin-bottom: 20px;
+}
+.todo-button:hover{
+    background-color: #b95d5d;
+    transition: all 0.3s ease;
+}
+.todo-list{
+    display: flex;
+    align-items: center; 
+    flex-direction: column; 
+    transition: all 1s ease;
+    min-height: 100px;
+}
+.todo-item{
+    background-color: azure;
+    font-size: 1.5rem;
+    width: 30vw;
+    min-width: 325px;
+    margin: 5px;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    transition: all 1s ease;
+}
+.checked-todo-item{
+    background-color: azure;
+    font-size: 1.5rem;
+    width: 30vw;
+    min-width: 325px;
+    margin: 5px;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.5;
+    text-decoration: line-through;
+    transition: all 1.5s ease;
+}
+.complete{
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+.approve-button{
+    font-size: 1.5rem;
+    background-color: none;
+    border: none;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.approve-button:hover{
+    background-color: greenyellow;
+    transition: all 0.3s ease;
+}
+.delete-button{
+    font-size: 1.5rem;
+    background-color: none;
+    border: none;
+    margin-left: 5px;
+    padding: 10px;
+}
+.delete-button:hover{
+    background-color: rgb(219, 18, 18);
+    transition: all 0.3s ease;
+}
+.finished{
+    transform:translateY(8rem);
+    opacity: 0;
+}
+.todo{
+    flex: 1;
+    padding: 10px;
+}
